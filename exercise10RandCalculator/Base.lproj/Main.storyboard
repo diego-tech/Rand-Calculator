@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercise10RandCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGA-eo-XJF">
+                                <rect key="frame" x="50" y="114" width="314" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S26-is-eVM">
+                                <rect key="frame" x="50" y="169.5" width="314" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1K-9a-1l0">
+                                <rect key="frame" x="120" y="309.5" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Rfp-GD-uro"/>
+                                    <constraint firstAttribute="height" constant="60" id="iPm-EG-wZC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="additionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcn-ng-xfX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-em-p1Q">
+                                <rect key="frame" x="234" y="309.5" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MfP-V8-GVC"/>
+                                    <constraint firstAttribute="height" constant="60" id="Mkn-7F-yCC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="x">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="multiplicationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCT-0S-jUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-KD-Tdt">
+                                <rect key="frame" x="120" y="389.5" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="qQm-RN-Lg7"/>
+                                    <constraint firstAttribute="height" constant="60" id="vGo-nV-dID"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="substractionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qba-jt-93z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO0-br-2F9">
+                                <rect key="frame" x="234" y="389.5" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20392156859999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XL8-2Z-AQb"/>
+                                    <constraint firstAttribute="width" constant="60" id="b3i-1R-ceE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="divisionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbm-8R-4NA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S26-is-eVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="61H-Sm-dwC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S26-is-eVM" secondAttribute="trailing" constant="50" id="9Mn-Ry-lZr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eO0-br-2F9" secondAttribute="trailing" constant="120" id="CeJ-ti-w4k"/>
+                            <constraint firstItem="b1K-9a-1l0" firstAttribute="top" secondItem="S26-is-eVM" secondAttribute="bottom" constant="80" id="JUz-jk-ied"/>
+                            <constraint firstItem="eO0-br-2F9" firstAttribute="top" secondItem="PqO-em-p1Q" secondAttribute="bottom" constant="20" id="JyH-bq-dmu"/>
+                            <constraint firstItem="tGA-eo-XJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="LOv-gd-03j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PqO-em-p1Q" secondAttribute="trailing" constant="120" id="Slj-C5-zXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tGA-eo-XJF" secondAttribute="trailing" constant="50" id="Toq-4L-f3c"/>
+                            <constraint firstItem="2cx-KD-Tdt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="bya-oQ-fqD"/>
+                            <constraint firstItem="tGA-eo-XJF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="e9Q-fu-Y9P"/>
+                            <constraint firstItem="S26-is-eVM" firstAttribute="top" secondItem="tGA-eo-XJF" secondAttribute="bottom" constant="30" id="f4k-pB-9dM"/>
+                            <constraint firstItem="2cx-KD-Tdt" firstAttribute="top" secondItem="b1K-9a-1l0" secondAttribute="bottom" constant="20" id="iRb-Q2-3Yk"/>
+                            <constraint firstItem="b1K-9a-1l0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="oNW-QR-aE8"/>
+                            <constraint firstItem="PqO-em-p1Q" firstAttribute="top" secondItem="S26-is-eVM" secondAttribute="bottom" constant="80" id="pkD-7W-n1J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="operatorAddition" destination="b1K-9a-1l0" id="qa4-Ts-uWc"/>
+                        <outlet property="operatorDivision" destination="eO0-br-2F9" id="ax7-D9-Zxu"/>
+                        <outlet property="operatorMultiplication" destination="PqO-em-p1Q" id="pxX-Wi-ExT"/>
+                        <outlet property="operatorSubstraction" destination="2cx-KD-Tdt" id="NgD-gW-I7c"/>
+                        <outlet property="resultLabel" destination="S26-is-eVM" id="GuD-Ca-2er"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
